@@ -1,0 +1,7 @@
+After linking the CSS and JS
+copy this script tag and paste at the buttom of your code
+
+/* This one */
+<script>
+    AOS.init();
+  </script>
