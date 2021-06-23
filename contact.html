@@ -68,32 +68,32 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 holder">
                     <h3>Send a message</h3>
-                    <form class="form-horizontal" role="form" action="https://formspree.io/omenukoonyekachi690@gmail.com" method="POST">
+                    <form class="form-horizontal" role="form">
                      <div class="C-form-wrap img-thumbnail">
                          <div class="container">
                              <div class="row">
                                   <div class="col-lg-6 col-sm-6 holder">
                                       <div class="form-group">
                                      <label for="name" class="control-label">Name</label>
-                                     <input type="text" name="name" id="name" class="control" required>
+                                     <input type="text" name="name" id="contact-name" class="control" required>
                                     </div>
                                   </div>
                                   <div class="col-lg-6 col-sm-6 holder">
                                       <div class="form-group">
                                     <label for="phone" class="control-label">Phone</label>
-                                    <input type="tel" name="phone" id="phone" class="control" required>
+                                    <input type="text" name="contact -phone" id="contact-phone" class="control" required>
                                    </div>
                                 </div>
                              </div>
                              <div class="form-group">
                              <label for="email" class="control-label">Email</label>
-                             <input type="email" name="email" id="email" class="control" required>
+                             <input type="email" name="email" id="contact-email" class="control" required>
                             </div>
                          <div class="form-group">
                        <label for="note" class="control-label">Write Message</label>
-                       <textarea name="note" id="note" cols="30" rows="5" class="form-control message" required></textarea>
+                       <textarea name="note" id="contact-note" cols="30" rows="5" class="form-control message" required></textarea>
                     </div>
-                       <input type="submit" value="Send Message" id="contact-btn">
+                       <button type="submit" id="contact-btn"> Send Message </button>
                          </div>
                      </div>
                     </form>
@@ -217,7 +217,7 @@
                   <i class="fa fa-star"></i>
               </p>
               <hr>
-              <p>I've always been interested in learning about other cultures and when I had the opportunity to study in another country,</p>
+              <p>I've always been interested in learning about other cultures and when I had the opportunity to study in another country.</p>
           </div>
         </div>
   
@@ -234,7 +234,7 @@
                   <i class="fa fa-star"></i>
               </p>
               <hr>
-              <p>"I am from Dubai, UAE, and my experience at THS has been one I’ll always be thankful for</p>
+              <p>"I am from Dubai, UAE, and my experience at THS has been one I’ll always be thankful for that.</p>
           </div>
         </div>
     </div>
@@ -351,5 +351,12 @@
  
  <!-- Main JS File -->
  <script src="assets/js/main.js"></script>
+ <script src="assets/vendor/bootstrapValidation/bootstrap-validate.js"></script>
+ <script>
+    bootstrapValidate('#contact-name', 'alpha:Please Enter a valid Name')
+      bootstrapValidate('#contact-Phone', 'numeric:Please Enter a valid Number')
+      bootstrapValidate('#contact-email', 'email:Please Enter a valid Email')
+ </script>
+ 
 </body>
 </html>
